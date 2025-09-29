@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def say_hello():
-	return '<p>Hello, World, I am a Flask app!</p><p><a href="/about">About</a></p>'
+	return '<p>This is another string!</p><p><a href="/about">About</a></p><p><a href="/contact">Contact</a></p>'
 
 @app.route('/about')
 def about():
@@ -13,4 +13,5 @@ def about():
 @app.route('/contact')
 def contact():
 	return '<p>My email address is: <a href="mailto:c23401212@mytudublin.ie">c23401212@mytudublin.ie</a></p>'
+
 
