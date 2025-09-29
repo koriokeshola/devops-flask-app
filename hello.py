@@ -12,6 +12,5 @@ def about():
 
 @app.route('/contact')
 def contact():
-	return '<p>My email address is: <a href="mailto:c23401212@mytudublin.ie">c23401212@mytudublin.ie</a></p>'
-
+	return '<p>My email address is: <a href="mailto:C23401212@mytudublin.ie">C23401212@mytudublin.ie</a></p>'
 
