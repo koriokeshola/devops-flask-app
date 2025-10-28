@@ -1,9 +1,9 @@
 # Derived from Python Docker Container 
-FROM python:3
+FROM python:3.9-slim
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt ./
+COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
@@ -14,4 +14,4 @@ ENV FLASK_APP=hello.py
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_RUN_PORT=5001
 
-CMD [ "flask", "run", "--host=0.0.0.0", "--port=5001" ]
+CMD [ "python", "hello.py" ]
